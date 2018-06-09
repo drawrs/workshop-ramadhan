@@ -1,4 +1,4 @@
-package com.ramadhan.workshopramadhan.activity;
+package com.ramadhan.workshopramadhanapp.activity;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -9,10 +9,9 @@ import android.provider.Settings;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Toast;
 
-import com.ramadhan.workshopramadhan.MainActivity;
-import com.ramadhan.workshopramadhan.R;
+import com.ramadhan.workshopramadhanapp.MainActivity;
+import com.ramadhan.workshopramadhanapp.R;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -55,13 +54,7 @@ public class SplashScreen extends AppCompatActivity {
                     e.printStackTrace();
 
                 } finally {
-                    Intent i = new Intent(getApplicationContext(),
-                            MainActivity.class);
-
-                    i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP
-                            | Intent.FLAG_ACTIVITY_NEW_TASK);
-
-                    startActivity(i);
+                    startActivity(new Intent(SplashScreen.this, MainActivity.class));
                     finish();
 
                 }

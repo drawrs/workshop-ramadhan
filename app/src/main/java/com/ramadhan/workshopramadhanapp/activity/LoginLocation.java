@@ -1,13 +1,13 @@
-package com.ramadhan.workshopramadhan.activity;
+package com.ramadhan.workshopramadhanapp.activity;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.ramadhan.workshopramadhan.R;
+import com.ramadhan.workshopramadhanapp.R;
+import com.ramadhan.workshopramadhanapp.helper.MyFunction;
 
-public class LoginLocation extends AppCompatActivity {
+public class LoginLocation extends MyFunction {
 
     Preference preference;
 
@@ -52,4 +52,5 @@ public class LoginLocation extends AppCompatActivity {
             editor.clear().apply();
         }
     }
+
 }

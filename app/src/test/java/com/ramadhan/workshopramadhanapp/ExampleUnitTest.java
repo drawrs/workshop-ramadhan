@@ -1,4 +1,4 @@
-package com.ramadhan.workshopramadhan;
+package com.ramadhan.workshopramadhanapp;
 
 import org.junit.Test;
 
